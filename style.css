@@ -10,7 +10,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+html, body {
+    min-height: 100vh;
+}
 
 
 
@@ -26,75 +28,69 @@ header > h1 {
     font-family: var(--fonte2);
     font-weight: bold;
     font-size: 90px;
-    font-variant-caps: small-caps;
+    font-variant: small-caps;
 }
 
 header > p {
     font-family: var(--fonte1);
 }
 
-header > p > a {
+a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
 
 
 
 main {
     font-family: var(--fonte3);
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
+    position: relative;
 }
 
-main > p {
-    height: 100vh;
-    font-size: 2em;
+section {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+.imagem {
+    box-shadow: inset 6px 6px 15px 0px rgba(0, 0, 0, 0.652);
+}
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.419);
+    color: white;
     padding: 20px;
+    display: inline-block;
 }
 
-main > .imagem1 {
+main .abelha {
     background: black url(imagens/background001.jpg) center center fixed;
     background-size: cover;
-    
 
-    max-width: 100%;
-    width: 100wh;
-    height: 100vh;
 }
 
-main > .imagem2 {
+main > .papel {
     background: black url(imagens/background002.jpg) center center fixed;
     background-size: cover;
     
-
     max-width: 100%;
     width: 100wh;
     height: 100vh;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 
